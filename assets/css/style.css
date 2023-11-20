@@ -28,7 +28,7 @@
 
 body {
     min-height: 100vh;
-    background: url("/assets/img/background2.jpg") no-repeat;
+    background: url("../img/background2.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -406,28 +406,28 @@ body {
 }
 
 .slide1 {
-    background-image: url("/assets/img/coding-cutted.jpg");
+    background-image: url("../img/coding-cutted.jpg");
 
 }
 
 .slide2 {
     animation-delay: 7s;
-    background-image: url("/assets/img/btc-cutted.jpg")
+    background-image: url("../img/btc-cutted.jpg")
 }
 
 .slide3 {
     animation-delay: 12s;
-    background-image: url("/assets/img/guitar-cutted.jpg")
+    background-image: url("../img/guitar-cutted.jpg")
 }
 
 .slide4 {
     animation-delay: 17s;
-    background-image: url("/assets/img/studio-cutted.jpg")
+    background-image: url("../img/studio-cutted.jpg")
 }
 
 .slide5 {
     animation-delay: 22s;
-    background-image: url("/assets/img/WS-cutted.jpg")
+    background-image: url("../img/WS-cutted.jpg")
 }
 
 .about-me {
@@ -824,23 +824,23 @@ button:nth-child(2) {
     }
 
     .slide1 {
-        background-image: url("/assets/img/coding.jpg");
+        background-image: url("../img/coding.jpg");
     }
 
     .slide2 {
-        background-image: url("/assets/img/btc.jpg");
+        background-image: url("../img/btc.jpg");
     }
 
     .slide3 {
-        background-image: url("/assets/img/guitar.jpg");
+        background-image: url("../img/guitar.jpg");
     }
 
     .slide4 {
-        background-image: url("/assets/img/studio.jpg");
+        background-image: url("../img/studio.jpg");
     }
 
     .slide5 {
-        background-image: url("/assets/img/WS.jpg");
+        background-image: url("../img/WS.jpg");
     }
 
     .about-photo {
