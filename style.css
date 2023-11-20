@@ -282,6 +282,10 @@ body {
 
 @keyframes typing {
 
+    90% {
+        left: 100%;
+        width: 0vh;
+    }
     100% {
         left: 100%;
         width: 0vh;
