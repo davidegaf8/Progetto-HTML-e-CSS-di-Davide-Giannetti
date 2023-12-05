@@ -286,6 +286,7 @@ body {
         left: 100%;
         width: 0vh;
     }
+
     100% {
         left: 100%;
         width: 0vh;
@@ -642,17 +643,74 @@ button:nth-child(2) {
     animation-delay: .5s;
 }
 
+.checkbox-label {
+    font-size: 13px;
+    letter-spacing: 0px;
+    display: inline;
+
+}
+
 /* PORTFOLIO SECTION*/
 .portfolio {
     background-color: whitesmoke;
     width: 100%;
+    top: 80px;
     min-height: 100vh;
+    position: relative;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    justify-items: center;
-    position: relative;
-    top: 80px;
+    row-gap: 30px;
     padding: 4vw 4vw;
+    border-collapse: collapse;
+}
+
+.work-experience {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-right: 1px solid rgb(0, 4, 107);
+}
+
+.work-experience ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: .8vw auto 0 auto;
+    border-left: 1px solid rgb(0, 4, 107);
+}
+
+.work-experience li {
+    margin-top: 1.5vw;
+    line-height: 30px;
+    font-weight: 600;
+    padding-left: 1.8vw;
+    padding-right: 1.8vw;
+}
+
+.work-experience p {
+    font-size: smaller;
+    font-weight: 500;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    line-height: 20px;
+    max-width: 300px;
+}
+
+.work-experience span {
+    font-size: smaller;
+    font-weight: 400;
+}
+
+.other-experience {
+    border-right: 1px solid rgb(0, 4, 107);
+}
+
+.other-experience ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style-type: none;
+    margin: 3vw auto 0 2vw;
 }
 
 .box {
@@ -698,15 +756,22 @@ button:nth-child(2) {
     font-weight: 600;
 }
 
+.education li:nth-child(3) {
+    margin-bottom: 0
+}
+
 .date {
     font-size: smaller;
     font-weight: 400;
 }
 
+.language {
+    border-left: 1px solid rgb(0, 4, 107);
+}
+
 .language li {
     font-weight: 600;
     margin-bottom: 2vw;
-    margin-left: 1.6vw;
 }
 
 .skills ul,
@@ -721,6 +786,17 @@ button:nth-child(2) {
 
 .softskills li {
     margin-bottom: .6vw;
+}
+
+.education span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.language span {
+    font-weight: 400;
+    font-size: smaller;
+    font-style: italic;
 }
 
 @keyframes slider {
@@ -863,16 +939,28 @@ button:nth-child(2) {
         grid-template-columns: 50% 50%;
     }
 
-    .box:nth-child(3) {
-        border-left: 1px solid rgb(0, 4, 107);
+    .work-experience {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 1;
     }
 
-    .box:nth-child(1) , .box:nth-child(2) {
-        margin-top: 15px;
+    .work-experience ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .work-experience p {
+        max-width: none;
+    }
+
+    .language {
+        border-left: none;
     }
     
-    .box:nth-child(3) , .box:nth-child(4) {
-        padding-top: 15px;
+    .skills , .other-experience {
+        border-left: 1px solid rgb(0, 4, 107);
     }
 }
 
@@ -893,24 +981,16 @@ button:nth-child(2) {
         width: 120%;
     }
 
-    .portfolio {
-        grid-template-columns: 100%;
-    }
+   .portfolio {
+    grid-template-columns: 100%;
+   }
 
-    .box:nth-child(2) , .box:nth-child(4) {
-        border-left: 1px solid rgb(0, 4, 107);
-    }
+   .education , .language , .softskills {
+    border-left: 1px solid rgb(0, 4, 107);
+   }
 
-    .box-content {
-        margin-left: 1vw;
-    }
-
-    .box:nth-child(1) {
-        margin-top: 15px;
-    }
-    
-    .box:nth-child(2) , .box:nth-child(3) , .box:nth-child(4) {
-        padding-top: 15px;
-        margin-top: 0;
-    }
+   .portfolio ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+   }
 }
