@@ -23,3 +23,11 @@ I used animations with the @keyframes property. I tried to recreate the "typing 
 On the about page I made a very quick description of myself, my background and my main passions and I tried to project it visually with a series of images that recalled exactly what was present in the description.
 Here too, thanks to the flex-direction and the use of 2 different image formats, I was able to manage the position of the elements on the page by making them adapt to the size of the viewport this time with a single breakpoint at 900px.
 
+*PORTFOLIO
+On this page, which I will subsequently implement to insert the projects that I will gradually create, I wanted to recreate the table layout very similar to that of the CV in PDF and to do so I used the "display:grid" property so as to be able to manage simple way the number of columns as the viewport changes.
+There are 2 breakpoints, the first at 900px where there is a change in layout, while the second at 450px where everything appears in a single column.
+
+*CONTACT
+In the Contacts section I inserted a form where you can enter your name, telephone number, email and a textarea for the text message; I also added a checkbox with the possibility of sending a copy of the email to your own address.
+I have chosen for the moment not to connect the form to external email sending services such as EmailJS, despite having seen and understood the procedure, to do so in a more conscious way later with the study of JavaScript.
+
